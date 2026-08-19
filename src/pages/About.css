@@ -1,0 +1,968 @@
+/* =========================================================
+   ABOUT PAGE
+========================================================= */
+
+.about-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1240px;
+
+  margin: 0 auto;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.about-hero {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #6f1d38;
+
+  color: #ffffff;
+}
+
+.about-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  right: -250px;
+  top: -280px;
+
+  border: 1px solid
+    rgba(255,255,255,0.1);
+
+  border-radius: 50%;
+}
+
+.about-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  left: -180px;
+  bottom: -250px;
+
+  border: 1px solid
+    rgba(255,255,255,0.08);
+
+  border-radius: 50%;
+}
+
+.about-hero-inner {
+  position: relative;
+
+  z-index: 2;
+
+  min-height: 430px;
+
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 80px;
+}
+
+.about-hero-content {
+  max-width: 760px;
+}
+
+.about-eyebrow {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: #dfc99d;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+}
+
+.about-hero-content h1 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(45px, 5vw, 65px);
+
+  line-height: 1.08;
+}
+
+.about-hero-content h1 span {
+  color: #dfc99d;
+}
+
+.about-hero-content p {
+  max-width: 650px;
+
+  margin: 25px 0 0;
+
+  color: #eee2e6;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* HERO BADGE */
+
+.about-hero-badge {
+  width: 220px;
+  min-width: 220px;
+  height: 220px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  color: #6f1d38;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 20px 50px
+    rgba(0,0,0,0.2);
+}
+
+.about-hero-badge span {
+  margin-bottom: 5px;
+
+  color: #888888;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.about-hero-badge strong {
+  font-family: Georgia, serif;
+
+  font-size: 52px;
+
+  line-height: 1;
+}
+
+.about-hero-badge small {
+  margin-top: 10px;
+
+  color: #777777;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.about-introduction {
+  padding: 100px 0;
+
+  background: #faf8f5;
+}
+
+.about-intro-grid {
+  display: grid;
+
+  grid-template-columns:
+    0.85fr 1.15fr;
+
+  gap: 110px;
+}
+
+.about-section-label > span,
+.quality-heading > span,
+.regional-content > span,
+.assignment-help-content > span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #7a1f3d;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.about-section-label h2,
+.quality-heading h2,
+.regional-content h2,
+.assignment-help-content h2 {
+  margin: 0;
+
+  color: #292929;
+
+  font-family: Georgia, serif;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+}
+
+.about-section-label h2 em,
+.quality-heading h2 em,
+.regional-content h2 em,
+.assignment-help-content h2 em {
+  color: #7a1f3d;
+
+  font-style: normal;
+}
+
+.about-intro-content {
+  padding-top: 4px;
+}
+
+.about-intro-content p {
+  margin: 0 0 18px;
+
+  color: #666666;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+.about-intro-content .about-lead {
+  margin-bottom: 25px;
+
+  color: #3c3c3c;
+
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.about-stats {
+  background: #6f1d38;
+
+  color: #ffffff;
+}
+
+.about-stats-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+.about-stat {
+  padding: 45px 25px;
+
+  text-align: center;
+
+  border-right:
+    1px solid
+    rgba(255,255,255,0.2);
+}
+
+.about-stat:last-child {
+  border-right: none;
+}
+
+.about-stat strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #dfc99d;
+
+  font-family: Georgia, serif;
+
+  font-size: 40px;
+}
+
+.about-stat span {
+  color: #eadde1;
+
+  font-size: 11px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   WRITING PROCESS
+========================================================= */
+
+.writing-process {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.about-center-heading {
+  max-width: 720px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+.about-center-heading > span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #7a1f3d;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.about-center-heading h2 {
+  margin: 0;
+
+  color: #292929;
+
+  font-family: Georgia, serif;
+
+  font-size: 43px;
+
+  line-height: 1.2;
+}
+
+.about-center-heading h2 em {
+  color: #7a1f3d;
+
+  font-style: normal;
+}
+
+.about-center-heading p {
+  margin: 20px 0 0;
+
+  color: #777777;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.process-content {
+  display: grid;
+
+  grid-template-columns:
+    0.8fr 1.2fr;
+
+  gap: 80px;
+}
+
+.process-intro p {
+  margin: 0 0 20px;
+
+  color: #666666;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+.process-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  border-top: 1px solid #e4dfdb;
+
+  border-left: 1px solid #e4dfdb;
+}
+
+.process-card {
+  min-height: 190px;
+
+  padding: 25px;
+
+  border-right: 1px solid #e4dfdb;
+
+  border-bottom: 1px solid #e4dfdb;
+}
+
+.process-card > span {
+  color: #c7a15b;
+
+  font-family: Georgia, serif;
+
+  font-size: 15px;
+}
+
+.process-card h3 {
+  margin: 20px 0 10px;
+
+  color: #292929;
+
+  font-size: 16px;
+}
+
+.process-card p {
+  margin: 0;
+
+  color: #777777;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   QUALITY
+========================================================= */
+
+.quality-section {
+  padding: 100px 0;
+
+  background: #faf8f5;
+}
+
+.quality-grid {
+  display: grid;
+
+  grid-template-columns:
+    0.85fr 1.15fr;
+
+  gap: 110px;
+}
+
+.quality-content > p {
+  margin: 0 0 18px;
+
+  color: #666666;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+.quality-highlight {
+  margin: 30px 0;
+
+  padding: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  background: #ffffff;
+
+  border-left: 4px solid #7a1f3d;
+}
+
+.quality-highlight > strong {
+  color: #7a1f3d;
+
+  font-family: Georgia, serif;
+
+  font-size: 48px;
+}
+
+.quality-highlight span {
+  color: #777777;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.quality-highlight p {
+  margin: 5px 0 0;
+
+  color: #666666;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   REGIONAL ASSIGNMENT WRITING
+========================================================= */
+
+.regional-section {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.regional-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr 0.9fr;
+
+  gap: 90px;
+
+  align-items: center;
+}
+
+.regional-content p {
+  margin: 20px 0 0;
+
+  color: #666666;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+.regions-card {
+  padding: 35px;
+
+  background: #6f1d38;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 20px 50px
+    rgba(50, 15, 28, 0.15);
+}
+
+.regions-card-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 25px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,0.2);
+}
+
+.regions-card-header span {
+  color: #dfc99d;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.regions-card-header strong {
+  color: rgba(255,255,255,0.35);
+
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+}
+
+.regions {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+}
+
+.regions > div {
+  padding: 25px 10px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,0.15);
+}
+
+.regions > div:nth-child(odd) {
+  border-right:
+    1px solid
+    rgba(255,255,255,0.15);
+}
+
+.regions span {
+  color: #dfc99d;
+
+  font-size: 10px;
+}
+
+.regions strong {
+  font-family: Georgia, serif;
+
+  font-size: 19px;
+}
+
+.regions-card > p {
+  margin: 25px 0 0;
+
+  color: #e6dce0;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   ASSIGNMENT HELP
+========================================================= */
+
+.assignment-help {
+  padding: 100px 0;
+
+  background: #faf8f5;
+}
+
+.assignment-help-grid {
+  display: grid;
+
+  grid-template-columns:
+    100px 1fr;
+
+  gap: 60px;
+}
+
+.assignment-help-number {
+  color: #c7a15b;
+
+  font-family: Georgia, serif;
+
+  font-size: 55px;
+
+  font-weight: 700;
+}
+
+.assignment-help-content {
+  max-width: 800px;
+}
+
+.assignment-help-content p {
+  margin: 20px 0 0;
+
+  color: #666666;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+.about-button {
+  margin-top: 30px;
+
+  padding: 0 23px;
+
+  min-height: 50px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  background: #7a1f3d;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.about-button:hover {
+  background: #972b50;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.about-cta {
+  padding: 75px 0;
+
+  background: #292929;
+
+  color: #ffffff;
+}
+
+.about-cta-inner {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.about-cta-inner > div:first-child span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #c7a15b;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.about-cta h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 40px;
+
+  line-height: 1.2;
+}
+
+.about-cta-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+.about-cta-button {
+  min-height: 50px;
+
+  padding: 0 25px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  background: #7a1f3d;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.about-cta-button:hover {
+  background: #972b50;
+}
+
+.about-cta-link {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.about-cta-link:hover {
+  color: #c7a15b;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .about-hero-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .about-hero-badge {
+    width: 170px;
+    min-width: 170px;
+    height: 170px;
+  }
+
+  .about-hero-badge strong {
+    font-size: 42px;
+  }
+
+  .about-intro-grid,
+  .quality-grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .about-stats-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .about-stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .process-content {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .regional-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .about-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-hero-inner {
+    min-height: auto;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .about-hero-content p {
+    font-size: 14px;
+  }
+
+  .about-hero-badge {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+  }
+
+  .about-hero-badge strong {
+    font-size: 36px;
+  }
+
+  .about-introduction,
+  .writing-process,
+  .quality-section,
+  .regional-section,
+  .assignment-help {
+    padding: 70px 0;
+  }
+
+  .about-section-label h2,
+  .quality-heading h2,
+  .regional-content h2,
+  .assignment-help-content h2,
+  .about-center-heading h2 {
+    font-size: 34px;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-stat {
+    padding: 30px 10px;
+  }
+
+  .about-stat strong {
+    font-size: 30px;
+  }
+
+  .process-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .assignment-help-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .assignment-help-number {
+    font-size: 38px;
+  }
+
+  .about-cta-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .about-cta h2 {
+    font-size: 34px;
+  }
+
+  .about-cta-actions {
+    flex-wrap: wrap;
+  }
+
+}
